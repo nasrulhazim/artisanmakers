@@ -1,0 +1,48 @@
+<?php
+
+namespace DummyNamespace;
+
+use NasrulHazim\Contracts\ProcessorContract;
+
+/**
+ * DummyClass Processor
+ */
+class DummyClass implements ProcessorContract
+{
+    /**
+     * The instance.
+     *
+     * @var $instance 
+     */
+    protected $instance;
+
+    /**
+     * Create a new DummyClass instance.
+     *
+     * @return void
+     */
+    public function __construct($instance)
+    {
+        $this->instance = $instance;
+    }
+
+	/**
+	 * Create an instance of DummyClass
+     *
+	 * @return DummyNamespace\DummyClass 
+	 */
+    public static function make($instance)
+    {
+    	return new self($instance);
+    }
+
+    /**
+     * Handle the processing
+     *
+     * @return void
+     */
+    public function handle()
+    {
+
+    }
+}

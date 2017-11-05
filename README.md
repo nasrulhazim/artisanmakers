@@ -28,7 +28,7 @@ Type `php artisan --help` for more details.
 - [x] Exceptions: `php artisan make:exception ClassName`
 - [ ] Macros: `php artisan make:macro ClassName`
 - [x] Presenters: `php artisan make:presenter ClassName`
-- [ ] Processors: `php artisan make:processor ClassName`
+- [x] Processors: `php artisan make:processor ClassName`
 - [ ] Repositories: `php artisan make:repository ClassName`
 - [ ] Resourceful: `php artisan make:resourceful ClassName`
 - [ ] Services: `php artisan make:service ClassName`

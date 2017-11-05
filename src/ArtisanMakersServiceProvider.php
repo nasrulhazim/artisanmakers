@@ -10,6 +10,7 @@ use NasrulHazim\ArtisanMakers\Console\Commands\InstallCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeContractCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeExceptionCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeProcessorCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeScaffoldCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeViewCommand;
@@ -33,6 +34,7 @@ class ArtisanMakersServiceProvider extends ServiceProvider
             MakeContractCommand::class,
             MakeExceptionCommand::class,
             MakePresenterCommand::class,
+            MakeProcessorCommand::class,
             MakeResourcefulControllerCommand::class,
             MakeScaffoldCommand::class,
             MakeViewCommand::class,

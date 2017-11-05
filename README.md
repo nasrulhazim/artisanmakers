@@ -16,9 +16,23 @@ if ($this->app->environment() !== 'production') {
 }
 ```
 
+On initial setup, run `php artisan am:install`.
+
 ## Usage
 
 Type `php artisan --help` for more details.
+
+## Available Aritsan Makers Command
+
+- [ ] Contracts: `php artisan am:contract ClassName`
+- [ ] Exceptions: `php artisan am:exception ClassName`
+- [ ] Macros: `php artisan am:macro ClassName`
+- [ ] Presenters: `php artisan am:presenter ClassName`
+- [ ] Processors: `php artisan am:processor ClassName`
+- [ ] Repositories: `php artisan am:repository ClassName`
+- [ ] Services: `php artisan am:service ClassName`
+- [ ] Traits: `php artisan am:trait ClassName`
+- [ ] Transformers: `php artisan am:transformer ClassName`
 
 ## License
 

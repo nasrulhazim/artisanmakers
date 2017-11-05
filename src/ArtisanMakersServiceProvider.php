@@ -3,6 +3,17 @@
 namespace NasrulHazim\ArtisanMakers;
 
 use Illuminate\Support\ServiceProvider;
+use NasrulHazim\ArtisanMakers\Console\Commands\Clear\Cache;
+use NasrulHazim\ArtisanMakers\Console\Commands\Clear\Log;
+use NasrulHazim\ArtisanMakers\Console\Commands\Database\Setup;
+use NasrulHazim\ArtisanMakers\Console\Commands\InstallCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeContractCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeExceptionCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeScaffoldCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeViewCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\Secure\Cookie;
 
 class ArtisanMakersServiceProvider extends ServiceProvider
 {
@@ -13,38 +24,19 @@ class ArtisanMakersServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $commands = [];
-
-        // commands available on console and web app
-        $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Clear\Cache::class;
-
-        // register commands only when application is running in console mode
-        if ($this->app->runningInConsole()) {
-
-            // register all commands that can be use during local, staging and production
-            // $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Clear\Cache::class;
-
-            // register commands that running on local and staging
-            if ($this->app->environment('local', 'staging')) {
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\InstallCommand::class;
-
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Clear\Cache::class;
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Clear\Log::class;
-
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Database\Setup::class;
-
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Secure\Cookie::class;
-
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeContractCommand::class;
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeExceptionCommand::class;
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand::class;
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand::class;
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeScaffoldCommand::class;
-                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeViewCommand::class;
-            }
-
-            $this->commands($commands);
-        }
+        $this->commands([
+            InstallCommand::class,
+            Cache::class,
+            Log::class,
+            Setup::class,
+            Cookie::class,
+            MakeContractCommand::class,
+            MakeExceptionCommand::class,
+            MakePresenterCommand::class,
+            MakeResourcefulControllerCommand::class,
+            MakeScaffoldCommand::class,
+            MakeViewCommand::class,
+        ]);
 
         $this->publishes([
             dirname(__FILE__) . '/resources/views' => resource_path('views'),

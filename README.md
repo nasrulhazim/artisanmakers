@@ -33,7 +33,7 @@ Type `php artisan --help` for more details.
 - [ ] Resourceful: `php artisan make:resourceful ClassName`
 - [ ] Services: `php artisan make:service ClassName`
 - [x] Traits: `php artisan make:trait ClassName`
-- [ ] Transformers: `php artisan make:transformer ClassName`
+- [x] Transformers: `php artisan make:transformer ClassName`
 
 ## License
 

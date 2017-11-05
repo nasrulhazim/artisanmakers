@@ -1,0 +1,50 @@
+<?php
+
+namespace DummyNamespace;
+
+/**
+ * Call this class by calling \DummyNamespace\DummyClass::make()->transform($object)
+ */
+class DummyClass
+{
+    /**
+     * The instance.
+     *
+     * @var $instance 
+     */
+    protected $instance;
+
+    /**
+     * Create a new DummyClass instance.
+     *
+     * @return void
+     */
+    public function __construct($instance)
+    {
+        $this->instance = $instance;
+    }
+
+    /**
+     * Create an instance of DummyClass
+     *
+     * @return DummyNamespace\DummyClass 
+     */
+    public static function make($instance)
+    {
+        return new self($instance);
+    }
+    
+    /**
+     * Transform an object to any desired output.
+     *
+     * @param mixed $object
+     * @return array
+     */
+    public function transform($object)
+    {
+        $data = [
+            // 'key' => $object->value,
+        ];
+        return json_decode(json_encode($data));
+    }
+}

@@ -1,0 +1,22 @@
+<?php
+
+namespace DummyNamespace;
+
+use NasrulHazim\Contracts\PresenterContract;
+
+/**
+ * Presenter class for DummyClass 
+ * Call this class by calling \DummyNamespace\DummyClass::present(...$args);
+ */
+class DummyClass implements PresenterContract
+{
+    /** 
+     * Apply Your Implementation here
+     * @param  mixed $type 
+     * @return string
+     */
+    public static function present(...$args)
+    {
+
+    }
+}

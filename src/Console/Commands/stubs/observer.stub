@@ -1,0 +1,25 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyFullModelClass;
+
+/**
+ * See events
+ * @href https://laravel.com/docs/5.5/eloquent#events
+ * Available metthods: retrieved, creating, created, updating, updated, 
+ * saving, saved, deleting, deleted, restoring, restored
+ */
+class DummyClass
+{
+   /**
+     * Listen to the created event.
+     *
+     * @param  DummyModelClass $DummyModelVariable
+     * @return void
+     */
+    public function created(DummyModelClass $DummyModelVariable)
+    {
+        
+    }
+}

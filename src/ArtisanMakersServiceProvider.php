@@ -9,6 +9,7 @@ use NasrulHazim\ArtisanMakers\Console\Commands\Database\Setup;
 use NasrulHazim\ArtisanMakers\Console\Commands\InstallCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeContractCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeExceptionCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeObserverCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeProcessorCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand;
@@ -35,6 +36,7 @@ class ArtisanMakersServiceProvider extends ServiceProvider
             Cookie::class,
             MakeContractCommand::class,
             MakeExceptionCommand::class,
+            MakeObserverCommand::class,
             MakePresenterCommand::class,
             MakeProcessorCommand::class,
             MakeResourcefulControllerCommand::class,

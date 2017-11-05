@@ -13,6 +13,7 @@ use NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeProcessorCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeScaffoldCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeTraitCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeViewCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\Secure\Cookie;
 
@@ -37,6 +38,7 @@ class ArtisanMakersServiceProvider extends ServiceProvider
             MakeProcessorCommand::class,
             MakeResourcefulControllerCommand::class,
             MakeScaffoldCommand::class,
+            MakeTraitCommand::class,
             MakeViewCommand::class,
         ]);
 

@@ -24,7 +24,7 @@ Type `php artisan --help` for more details.
 
 ## Available Aritsan Makers Command
 
-- [ ] Contracts: `php artisan am:contract ClassName`
+- [x] Contracts: `php artisan am:contract ClassName`
 - [ ] Exceptions: `php artisan am:exception ClassName`
 - [ ] Macros: `php artisan am:macro ClassName`
 - [ ] Presenters: `php artisan am:presenter ClassName`

@@ -11,7 +11,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:install';
+    protected $signature = 'artisanmakers:install';
 
     /**
      * The console command description.

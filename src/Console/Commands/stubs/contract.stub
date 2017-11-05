@@ -1,0 +1,14 @@
+<?php
+
+namespace DummyNamespace;
+
+/**
+ * DummyClass Contract
+ */
+interface DummyClass
+{
+	/**
+     * An interface method.
+     */
+	public function anInterfaceMethod();
+}

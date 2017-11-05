@@ -17,6 +17,7 @@ class ArtisanMakersServiceProvider extends ServiceProvider
 
         // commands available on console and web app
         $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Clear\Cache::class;
+        $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\InstallCommand::class;
 
         // register commands only when application is running in console mode
         if ($this->app->runningInConsole()) {

@@ -22,7 +22,7 @@ On initial setup, run `php artisan artisanmakers:install`.
 
 Type `php artisan --help` for more details.
 
-## Available Aritsan Makers Command
+## Available Commands
 
 - [x] Contracts: `php artisan make:contract ClassName`
 - [x] Exceptions: `php artisan make:exception ClassName`

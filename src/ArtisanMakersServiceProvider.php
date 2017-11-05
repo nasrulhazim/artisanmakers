@@ -36,6 +36,7 @@ class ArtisanMakersServiceProvider extends ServiceProvider
                 $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\Secure\Cookie::class;
 
                 $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeContractCommand::class;
+                $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeExceptionCommand::class;
                 $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand::class;
                 $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeScaffoldCommand::class;
                 $commands[] = \NasrulHazim\ArtisanMakers\Console\Commands\MakeViewCommand::class;

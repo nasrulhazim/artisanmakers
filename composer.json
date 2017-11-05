@@ -1,0 +1,19 @@
+{
+    "name": "nasrulhazim/artisanmakers",
+    "description": "Built with Laravel Standalone Package Creator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nasrul Hazim",
+            "email": "nasrulhazim.m@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NasrulHazim\\ArtisanMakers\\": "src/"
+        }
+    },
+    "require": {
+        
+    }
+}

@@ -9,6 +9,7 @@ use NasrulHazim\ArtisanMakers\Console\Commands\Database\Setup;
 use NasrulHazim\ArtisanMakers\Console\Commands\InstallCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeContractCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeExceptionCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeModelCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeObserverCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeProcessorCommand;
@@ -29,13 +30,13 @@ class ArtisanMakersServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->commands([
-            InstallCommand::class,
             Cache::class,
             Log::class,
             Setup::class,
-            Cookie::class,
+            InstallCommand::class,
             MakeContractCommand::class,
             MakeExceptionCommand::class,
+            MakeModelCommand::class,
             MakeObserverCommand::class,
             MakePresenterCommand::class,
             MakeProcessorCommand::class,
@@ -44,6 +45,7 @@ class ArtisanMakersServiceProvider extends ServiceProvider
             MakeTraitCommand::class,
             MakeTransformerCommand::class,
             MakeViewCommand::class,
+            Cookie::class,
         ]);
 
         $this->publishes([

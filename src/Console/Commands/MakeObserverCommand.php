@@ -57,6 +57,9 @@ class MakeObserverCommand extends GeneratorCommand
      *
      * Remove the base controller import if we are already in base namespace.
      *
+     * @todo Register ObserverServiceProvider in config/app.php, if not yet
+     * @todo Include model & observer namespace in ObserverServiceProvider
+     * @todo Boot up Observer in ObserverServiceProvider
      * @param  string  $name
      * @return string
      */
@@ -66,11 +69,6 @@ class MakeObserverCommand extends GeneratorCommand
             $replace = $obvserverReplace = [];
 
             $replace = $obvserverReplace = $this->buildModelReplacements($replace);
-
-            // Need to update ObserverServiceProvider to:
-            //
-            // 1. Include model & observer namespace
-            // 2. Register at boot() method
 
             return str_replace(
                 array_keys($replace), array_values($replace), parent::buildClass($name)

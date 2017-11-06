@@ -16,8 +16,6 @@ if ($this->app->environment() !== 'production') {
 }
 ```
 
-On initial setup, run `php artisan artisanmakers:install`.
-
 ## Usage
 
 Type `php artisan --help` for more details.

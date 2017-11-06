@@ -59,7 +59,7 @@ class MakeObserverCommand extends GeneratorCommand
      *
      * @todo Register ObserverServiceProvider in config/app.php, if not yet
      * @todo Include model & observer namespace in ObserverServiceProvider
-     * @todo Boot up Observer in ObserverServiceProvider
+     * @todo Bootstrap Observer in ObserverServiceProvider
      * @param  string  $name
      * @return string
      */
@@ -88,6 +88,10 @@ class MakeObserverCommand extends GeneratorCommand
         $this->registerObserverServiceProvider();
 
         parent::handle();
+
+        $this->info('Please include model and observer namespace in ObserverServiceProvider');
+        $this->info('Then bootstrap Observer in ObserverServiceProvider in boot() method like the following:');
+        $this->comment('User::observe(ObserveUser::class);');
     }
 
     /**
@@ -100,6 +104,8 @@ class MakeObserverCommand extends GeneratorCommand
             $this->call('make:provider', [
                 'name' => 'ObserverServiceProvider',
             ]);
+            $this->info('Please register your ObserverServiceProvider in config/app.php.');
+            $this->comment('Do run php artisan config:cache to make sure ObserverServiceProvider is loaded.');
         }
     }
 

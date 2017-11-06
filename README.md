@@ -31,16 +31,21 @@ Type `php artisan --help` for more details.
 - [ ] Macros: `php artisan make:macro ClassName`
 
 - [x] Model: `php artisan make:mode ModelName` 
-	- [x] this will create models under `app/Models` directory instead of `app` directory by default.
-	- [x] Register manually in your application in `app/Console/Kernel.php` in `$commands` property. Not sure why the command didn't load in the package. Probably it's loaded, by overwrite by default `make:model` command.
+	- This will create models under `app/Models` directory instead of `app` directory by default.
+	- **Register manually** in your application in `app/Console/Kernel.php` in `$commands` property. Not sure why the command didn't load in the package. Probably it's loaded, by overwrite by default `make:model` command.
 
-```php
-protected $commands = [
-    \NasrulHazim\ArtisanMakers\Console\Commands\MakeModelCommand::class,
-];
-```
+	```php
+	protected $commands = [
+	    \NasrulHazim\ArtisanMakers\Console\Commands\MakeModelCommand::class,
+	];
+	```
 
 - [ ] Observer: `php artisan make:observer ObserverClassName ModelToObserve`
+
+	**TODO**
+
+	- [x] Create `ObserverServiceProvider`
+	- [x] Create `Observer` class
 	- [ ] Register `ObserverServiceProvider` in `config/app.php`
 	- [ ] Include model & observer namespace in `ObserverServiceProvider`
 	- [ ] Bootstrap Observer in `ObserverServiceProvider`
@@ -53,7 +58,7 @@ protected $commands = [
 
 - [ ] Resourceful: `php artisan make:resourceful ClassName`
 
-- [ ] Services: `php artisan make:service ServiceClassName`
+- [x] Services: `php artisan make:service ServiceClassName`
 
 - [x] Traits: `php artisan make:trait TraitClassName`
 

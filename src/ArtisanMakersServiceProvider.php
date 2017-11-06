@@ -15,6 +15,7 @@ use NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeProcessorCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeScaffoldCommand;
+use NasrulHazim\ArtisanMakers\Console\Commands\MakeServiceCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeTraitCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeTransformerCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeViewCommand;
@@ -42,6 +43,7 @@ class ArtisanMakersServiceProvider extends ServiceProvider
             MakeProcessorCommand::class,
             MakeResourcefulControllerCommand::class,
             MakeScaffoldCommand::class,
+            MakeServiceCommand::class,
             MakeTraitCommand::class,
             MakeTransformerCommand::class,
             MakeViewCommand::class,

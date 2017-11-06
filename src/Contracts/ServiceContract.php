@@ -7,6 +7,6 @@ namespace NasrulHazim\ArtisanMakers\Contracts;
  */
 interface ServiceContract
 {
-    public static function make();
+    public static function make($instance);
     public function handle();
 }

@@ -7,6 +7,6 @@ namespace NasrulHazim\ArtisanMakers\Contracts;
  */
 interface ProcessorContract
 {
-    public static function make();
+    public static function make($instance);
     public function handle();
 }

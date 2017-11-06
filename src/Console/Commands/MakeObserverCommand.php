@@ -6,6 +6,11 @@ use Illuminate\Console\GeneratorCommand;
 use NasrulHazim\ArtisanMakers\Traits\CommandTrait;
 use Symfony\Component\Console\Input\InputOption;
 
+/**
+ * @todo Register ObserverServiceProvider in config/app.php, if not yet
+ * @todo Include model & observer namespace in ObserverServiceProvider
+ * @todo Bootstrap Observer in ObserverServiceProvider
+ */
 class MakeObserverCommand extends GeneratorCommand
 {
     use CommandTrait;
@@ -57,9 +62,6 @@ class MakeObserverCommand extends GeneratorCommand
      *
      * Remove the base controller import if we are already in base namespace.
      *
-     * @todo Register ObserverServiceProvider in config/app.php, if not yet
-     * @todo Include model & observer namespace in ObserverServiceProvider
-     * @todo Bootstrap Observer in ObserverServiceProvider
      * @param  string  $name
      * @return string
      */

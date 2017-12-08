@@ -13,12 +13,9 @@ use NasrulHazim\ArtisanMakers\Console\Commands\MakeModelCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeObserverCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakePresenterCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeProcessorCommand;
-use NasrulHazim\ArtisanMakers\Console\Commands\MakeResourcefulControllerCommand;
-use NasrulHazim\ArtisanMakers\Console\Commands\MakeScaffoldCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeServiceCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeTraitCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\MakeTransformerCommand;
-use NasrulHazim\ArtisanMakers\Console\Commands\MakeViewCommand;
 use NasrulHazim\ArtisanMakers\Console\Commands\Secure\Cookie;
 
 class ArtisanMakersServiceProvider extends ServiceProvider
@@ -41,12 +38,12 @@ class ArtisanMakersServiceProvider extends ServiceProvider
             MakeObserverCommand::class,
             MakePresenterCommand::class,
             MakeProcessorCommand::class,
-            MakeResourcefulControllerCommand::class,
-            MakeScaffoldCommand::class,
+            // MakeResourcefulControllerCommand::class,
+            // MakeScaffoldCommand::class,
             MakeServiceCommand::class,
             MakeTraitCommand::class,
             MakeTransformerCommand::class,
-            MakeViewCommand::class,
+            // MakeViewCommand::class,
             Cookie::class,
         ]);
 

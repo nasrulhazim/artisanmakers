@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use NasrulHazim\Contracts\PresenterContract;
+use NasrulHazim\ArtisanMakers\Contracts\PresenterContract;
 
 /**
  * Presenter class for DummyClass 

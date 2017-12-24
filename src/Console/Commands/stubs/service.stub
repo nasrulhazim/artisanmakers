@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use NasrulHazim\Contracts\ServiceContract;
+use NasrulHazim\ArtisanMakers\Contracts\ServiceContract;
 
 /**
  * DummyClass Service

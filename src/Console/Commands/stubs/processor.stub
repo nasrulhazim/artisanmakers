@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use NasrulHazim\Contracts\ProcessorContract;
+use NasrulHazim\ArtisanMakers\Contracts\ProcessorContract;
 
 /**
  * DummyClass Processor
